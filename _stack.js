@@ -63,7 +63,6 @@
     
     
     class LinkedList {
-    
         constructor(){
             this.head =null; // return top value of the stack
             this.size = 0;

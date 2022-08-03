@@ -12,4 +12,4 @@ function coinCombo(arr,k){
   return result
 }
 
-console.log(coinCombo([1,2,5],36))
+console.log(coinCombo([1,2,5],33))

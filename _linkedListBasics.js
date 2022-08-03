@@ -12,7 +12,6 @@ class LinkedList{
     }
 
     insertInFrontOfList(data){
-
         //node is created;
         //does not linked with any list
         const node = new Node(data);
@@ -51,7 +50,6 @@ class LinkedList{
 
     //genralised Function
     insertAfterKthPosition(data,k){
-
         let count=1;
         let curr = this.firstNode;
         while(curr && count!==k){
@@ -73,16 +71,16 @@ class LinkedList{
 
     deleteFromFront(){
         if(!this.firstNode){
-            throw Error("We can't delete from empaty list")
+            throw Error("We can't delete from empty list")
         }
-
-        let temp= this.firstNode;
+        let temp = this.firstNode;
         this.firstNode = this.firstNode.next;
         temp.next = null
         if(!this.firstNode){
             this.lastNode=null;
         }
     }
+    
     deleteFromLast(){
         let curr = this.firstNode;
         while(curr.next !== this.lastNode){

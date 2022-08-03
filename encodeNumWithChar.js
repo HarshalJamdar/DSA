@@ -17,7 +17,7 @@ function encodeNumWithChar(arr){
     }
     return arr
 }
-console.log(encodeNumWithChar([2,5,3]))
+console.log(encodeNumWithChar( [2,5,3] ))
 
 //OR
 

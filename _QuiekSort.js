@@ -55,14 +55,14 @@ function getCurrectPositionOfPivot2(arr,low,high){
     while(left<right){
 
         // this condition failed on 2 cases
-        // 1 => left >=right
+        // 1=> left >=right
         // 2=> arr[left] > pivot (we need to send this right position)
         while(left<right && arr[left]<pivot){
             left++;
         }
 
-         // this condition failed on 2 cases
-        // 1 => left >=right
+        // this condition failed on 2 cases
+        // 1=> left >=right
         // 2=> arr[right] <= pivot (we need to send this left position)
         while(left<right && arr[right]>=pivot){
             right--;

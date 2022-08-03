@@ -1,7 +1,5 @@
 
 
-
-
 function strToNum(str){
     return str*1
 }

@@ -1,6 +1,7 @@
 //Q1: Find is string is Anagram or not.
 //check isAnagram file
 //=========================================//
+ 
 
 //Q2: Find the maximum occurance of a character in an array or string.
 function maxOccChar(arr){

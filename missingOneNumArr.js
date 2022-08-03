@@ -10,7 +10,6 @@ function missingnum(arr){
 
     return (maxNum*(maxNum+1)/2)-totalSum
 }
-
 console.log(missingnum([1,2,3,6,5,7]))
 
 //mathematical formula for sum of 1 to n numbers is = n*(n+1)/2

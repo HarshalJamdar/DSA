@@ -22,9 +22,7 @@ function checkPalindrome2(str) {
             i++; 
             j--;
         }
-        else {
-            return false;
-        }
+        else return false; 
     }
     return true;
 }

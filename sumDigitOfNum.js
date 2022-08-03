@@ -1,3 +1,5 @@
+
+
 function sumDigit(num){
     if(num<10) return num
     return num%10+sumDigit(parseInt(num/10))

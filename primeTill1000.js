@@ -1,7 +1,7 @@
 // print till 1000 prime number.
 
 function isPrime(num){ 
-    for(let i=2;i<=parseInt(num/2);i++){ //
+    for(let i=2;i<=parseInt(num/2);i++){ 
         if(num%i===0) return false
     }
     return true

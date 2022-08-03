@@ -11,7 +11,6 @@ const finalArray = [];
       }
     });
          finalArray.push(multipliedNum)
-
     }
   return finalArray;
 

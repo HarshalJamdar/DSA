@@ -13,7 +13,7 @@ function primeNum(){
     while(count<1000){
         if(isPrime(n)){
             count++
-            console.log(`${count} prime number is ${n}`)
+            console.log( `${count} prime number is ${n}` )
         }
         n++
     }

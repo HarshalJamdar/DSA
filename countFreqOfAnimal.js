@@ -9,4 +9,4 @@ function animalCount(animals){
     return animalFreq
 }
 
-console.log(animalCount(["cat","dog","goat","lion","cat"]))
+console.log(animalCount( ["cat","dog","goat","lion","cat"] ))

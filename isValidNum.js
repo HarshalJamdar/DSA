@@ -9,7 +9,6 @@ function isValNum(int){
     }
     return isNum
 }
-
 console.log(isValNum("1234"))
 console.log(isValNum("1234q"))
 

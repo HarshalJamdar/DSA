@@ -16,6 +16,7 @@ function maxNum(arr){
     }
     return [max_char,">>>",max]
  }
+ 
  console.log(maxNum([1,3,3,2,4,2,3,2,2]))
 
 

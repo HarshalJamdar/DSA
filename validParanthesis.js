@@ -43,6 +43,5 @@ var isValid2 = function(s) {
   
  return !stack.length
 };
-
 console.log(isValid2("(){}[]"))
 console.log(isValid2("({{}})"))

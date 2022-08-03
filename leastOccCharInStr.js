@@ -7,7 +7,7 @@ function leastChar(str){
      if(map.get(str[i])==undefined) map.set(str[i],1)
      else map.set(str[i],map.get(str[i])+1)
   }
-
+//console.log(map)
   let least = Infinity, least_char=0
   for(let pairs of map){
      if(pairs[1]<least) {
