@@ -18,4 +18,5 @@ function primeNum(){
         n++
     }
 }
+
 primeNum()

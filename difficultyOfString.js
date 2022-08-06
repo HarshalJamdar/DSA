@@ -1,4 +1,4 @@
-function find(S){
+   function findDifficulty(S){
     let arrS = S.split(" ")
     let diffi = 0
     let easy = 0
@@ -6,9 +6,7 @@ function find(S){
        let word = arrS[i].split('')
        let vowel = 0
        let cons = 0
-       let consecutive = 0
        for(j in word){
-    
        if(/^[aeiou]$/.test(word[j])== true) vowel += 1
        else cons += 1 
     }
@@ -16,5 +14,5 @@ function find(S){
     else easy +=1
     }
      return  5*diffi + 3*easy
-    }
-    console.log(find("Difficulty of sentence"))
+   }
+   console.log(findDifficulty("Difficulty of sentence"))

@@ -13,5 +13,4 @@ function sumMaxEleOfArr(arr){
     console.log(max,secMax)
     return sum= max+secMax
 }
-
 console.log(sumMaxEleOfArr([12,4,67,2,34]))

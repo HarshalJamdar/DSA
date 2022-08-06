@@ -82,24 +82,20 @@ function getCurrectPositionOfPivot2(arr,low,high){
 
 
 function quickSort(arr,left,right){
-
     if(left>=right){
         return;
     }
-
     let currPositionOfPivot = getCurrectPositionOfPivot2(arr,left,right);
     // left side of the pivot
     quickSort(arr,left,currPositionOfPivot-1);
 
     // right side of the pivot
     quickSort(arr,currPositionOfPivot+1,right);
-
-
 }
 
 const arr = [6,3,4,6,1,7,3,9,2,8];
 
-// quickSort(arr,0,arr.length-1);
+quickSort(arr,0,arr.length-1);
 
 // console.log(arr);
 // for (let val of arr){

@@ -14,5 +14,4 @@ let res=[]
 for(let i=1;i<=max;i++){
     if(!hash[i]) res.push(i) 
 }
-
 console.log(res)

@@ -38,7 +38,6 @@ function rotate(str,k){
     }
     return str.join("")
  }
-
  console.log(rorateStr("abcde",3))//op: cdeab  edcba
 
  //====================================================//

@@ -12,7 +12,7 @@ function checkPalindrome(str) {
 console.log(checkPalindrome("malayalam"));
 
 // //=============================================//
-
+//***
 function checkPalindrome2(str) { 
     str = str.toString()
     let i = 0;

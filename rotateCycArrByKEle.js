@@ -1,7 +1,7 @@
 //Cyclically rorate array by k elements.
 
 function rotateCyc(arr,k){
-   k = k%arr.length
+   k = k%arr.length //if k>arr.length
    //console.log(k)
    
     let i=0,j=arr.length-1
@@ -44,14 +44,15 @@ const rotate = function (nums,k){
    
    // reverse the remaining part => [4,5,3,2,1] => [4,5,1,2,3]
    reverse(k,nums.length-1,nums);
+   return nums
 }
 
-const reverse = (left,right,arr)=>{
+function reverse(left,right,arr){
    while(left<right){
-       let Val = arr[left];
-       arr[left] = arr[right];
-       arr[right] = Val;
+      [arr[left],arr[right]]=[arr[right],arr[left]]
        left++;
        right--;
    }
 }
+
+console.log(rotate([1,2,3,4,5],2)) //[ 4, 5, 1, 2, 3 ]

@@ -11,6 +11,5 @@ function generateString(number){
     }
     return result
 }
-
 let final=generateString(5)
 console.log(final)

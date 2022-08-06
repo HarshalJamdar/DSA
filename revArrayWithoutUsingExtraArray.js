@@ -9,5 +9,4 @@ function reverse(arr){
     }
     return arr
 }
-
 console.log(reverse([9,0,6,7]))

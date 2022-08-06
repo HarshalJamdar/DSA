@@ -3,10 +3,14 @@
 function generateString(number){
     let alpha='abcdefghijklmnopqrstuvwxyz'
     let result=''
-    let i=0
-    while(i<number){
-        result+= alpha[i%26]
-        i++
+    // let i=0
+    // while(i<number){
+    //     result+= alpha[i%26]
+    //     i++
+    // }
+
+    for(let i=0;i<number;i++){
+        result += alpha[i%26]
     }
     return result
 }
@@ -17,7 +21,7 @@ function encodeNumWithChar(arr){
     }
     return arr
 }
-console.log(encodeNumWithChar( [2,5,3] ))
+console.log(encodeNumWithChar( [0,1,5,3,25,26,30] ))
 
 //OR
 

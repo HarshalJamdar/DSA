@@ -9,11 +9,10 @@ function reverse(str){
 
 function revSenWord(str){
     let words=str.split(" ")
-
     for(let i=0;i<words.length;i++){
         words[i]=reverse(words[i])
     }
     return words.join(' ')
 }
 
-console.log(revSenWord("they are playing game"))
+console.log(revSenWord("they are playing game")) //yeht era gniyalp emag

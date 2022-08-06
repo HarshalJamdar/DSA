@@ -1,21 +1,20 @@
 function sort01(arr){
-    let curr=0, count0=0
-    for(let i=0;i<arr.length;i++)
-    {
+    let index=0, count0=0
+    for(let i=0;i<arr.length;i++){
         if(arr[i]===0) count0++;
     }
 
     let count1=arr.length-count0
     while(count0>0){
-        arr[curr]=0
+        arr[index]=0
         count0--
-        curr++
+        index++
     }
 
     while(count1>0){
-        arr[curr]=1
+        arr[index]=1
         count1--
-        curr++
+        index++
     }
 
     return arr

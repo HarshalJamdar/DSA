@@ -6,7 +6,7 @@ var isValid = function(str) {
         if(stack[stack.length-1]==='{') stack.pop();
         else return false;
     }
-     if(str[i]===']'){
+    if(str[i]===']'){
         if(stack[stack.length-1]==='[') stack.pop();
         else return false;
     } 
@@ -40,7 +40,6 @@ var isValid2 = function(s) {
               return false
           }
   }
-  
  return !stack.length
 };
 console.log(isValid2("(){}[]"))

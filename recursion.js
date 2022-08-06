@@ -9,7 +9,7 @@ function sumNatural(n){
     return n + sumNatural(n-1)
 }
 
-console.log(sumNatural(10)) //1+2+3+4+5+6+7+8+9+10
+console.log(sumNatural(10)) //1+2+3+4+5+6+7+8+9+10 = 55
 
 //==============================================//
 
@@ -21,7 +21,7 @@ function sumEven(n){
     return 2*n-2+sumEven(n-1) 
 }
 
-console.log(sumEven(5)) // 0+2+4+6+8
+console.log(sumEven(5)) // 0+2+4+6+8 = 20
 
 //==============================================//
 
@@ -44,7 +44,7 @@ function fibo(n){
     return fibo(n-1)+fibo(n-2)
 }
 
-console.log(fibo(7)) // 1,1,2,3,5,8,13
+console.log(fibo(7)) // 1,1,2,3,5,8,13 = 13
 
 //============================================//
 
@@ -55,7 +55,7 @@ function product(arr){
     return arr[0]* product(arr.splice(1))
 }
 
-console.log(product([1,2,3,4])) //1*2*3*4
+console.log(product([1,2,3,4])) //1*2*3*4 = 24
 
 //==========================================//
 
@@ -66,7 +66,7 @@ function power(n,exp){
  return n*power(n, exp-1)
 }
 
-console.log(power(3,2)) //3^2
+console.log(power(3,2)) //3^2 = 9
 
 //=========================================//
 
@@ -77,7 +77,7 @@ function rev(str){
     return rev(str.slice(1)) + str[0]
 }
 
-console.log(rev("Hi There"))
+console.log(rev("Hi There")) //erehT iH
 
 //==========================================//
 
@@ -105,7 +105,7 @@ function flattenArr(arr){
     return flat
 }
 
-console.log(flattenArr([1,4,[5,3],[[8]]]))
+console.log(flattenArr([1,4,[5,3],[[8]]])) //[ 1, 4, 5, 3, 8 ]
 
 //============================//
 
@@ -116,15 +116,14 @@ var myPow = function(x, n) {
     if(n>0)return x*myPow(x, n-1)
     if(n<0)return 1/x*myPow(x, n+1)
 };
-console.log(myPow(2,-2))
-console.log(myPow(2,2))
+console.log(myPow(2,-2)) // 0.25
+console.log(myPow(2,2)) // 4
 
 //=============================================//
 
 //Q 11 : Capitalize first letter of word in Array.
 
 function capWord(arr){
-
     if(arr.length==0) return []
     let res=[]
     let s=arr[0][0].toUpperCase()+arr[0].slice(1)
@@ -132,4 +131,4 @@ function capWord(arr){
     return res.concat(capWord(arr.slice(1)))
 }
 
-console.log(capWord(["abc","def","ijk"]))
+console.log(capWord(["abc","def","ijk"])) //['Abc', 'Def','Ijk']

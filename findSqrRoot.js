@@ -4,7 +4,7 @@ function squareroot(num,left,right){
     while(true){
     let mid=(left+right)/2  
     let mul=mid*mid  
-console.log(mul,mid)               
+//console.log(mul,mid)               
      if(mul===num || (Math.abs(mul-num)<0.00001)) return mid
      else if(mul>num) right=mid
      else left=mid
@@ -18,7 +18,7 @@ function findSqRt(num){
     while(found===false){
         if(i*i===num){
             found = true 
-           console.log( i)
+            console.log(i)
         }
         else if(i*i>num){      
            var res=squareroot(num,i-1,i)

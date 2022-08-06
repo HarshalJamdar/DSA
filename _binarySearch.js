@@ -2,7 +2,7 @@ function binarySearch(arr,target){ //array, targeted number
     let min=0, max=arr.length-1
     while(min<=max){
         let mid=Math.floor((min+max)/2)
-        console.log(mid)
+        //console.log(mid)
         if(arr[mid]<target) min=mid+1
         else if(arr[mid]>target) max=mid-1
         else return mid

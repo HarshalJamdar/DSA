@@ -5,10 +5,9 @@ function selectionSort(array){
             if(array[j]<array[min]) min=j;
         }
         if(i!==min){
-            temp=array[i];
-            array[i]=array[min]
-            array[min]=temp
+        [array[i],array[min]] = [array[min],array[i]] 
         }
+        //console.log(array)
     }
     return array
 }

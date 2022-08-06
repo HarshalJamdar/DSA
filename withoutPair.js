@@ -11,4 +11,4 @@ function withoutPair(arr){
         if(val[1]%2===1) console.log("Without pair number is",val[0]) 
     }
 }
-withoutPair([1,2,3,2,1,5,7])
+withoutPair([1,2,3,2,1,5,7,2])

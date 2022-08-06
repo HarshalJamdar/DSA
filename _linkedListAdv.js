@@ -120,8 +120,7 @@ class LinkedList{
     findMiddle(){
         var slow_ptr = this.head;
         var fast_ptr = this.head;
-             if (this.head != null)
-             {
+             if (this.head != null){
                  while (fast_ptr != null && fast_ptr.next != null){
                      fast_ptr = fast_ptr.next.next;
                      slow_ptr = slow_ptr.next;

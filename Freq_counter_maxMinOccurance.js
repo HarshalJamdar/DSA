@@ -7,7 +7,6 @@
 function maxOccChar(arr){
    let freq = {} , max_occ = 0 ,max_char = null
    for(let i = 0; i< arr.length; i++){
-
       freq[arr[i]] = ( freq[arr[i]] || 0 ) + 1
 
       if(max_occ < freq[arr[i]]){
@@ -28,7 +27,6 @@ function maxOccWord(str){
    let arr = str.split(' ')
    let freq = {} , max_occ = 0 ,max_char = null
    for(let i = 0; i< arr.length; i++){
-
       freq[arr[i]] = ( freq[arr[i]] || 0 ) + 1
 
       if(max_occ < freq[arr[i]]){

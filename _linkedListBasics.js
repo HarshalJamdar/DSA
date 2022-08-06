@@ -80,7 +80,7 @@ class LinkedList{
             this.lastNode=null;
         }
     }
-    
+
     deleteFromLast(){
         let curr = this.firstNode;
         while(curr.next !== this.lastNode){
@@ -90,15 +90,18 @@ class LinkedList{
         curr.next=null;
         this.lastNode = curr;
     }
+
     deleteFromkthPosition(k){
         let count=1;
+        let curr = this.firstNode;                                                                                                                                 
         if(k===1){
             this.deleteFromFront();
         }
         while(curr && count !==k-1){
             curr = curr.next;
             count++
-        }if(!curr){
+        }
+        if(!curr){
             console.log("invalid position");
             throw Error("Invald position")
         }else{
@@ -114,12 +117,12 @@ class LinkedList{
     }
 
     reverseList(){
-
         let curr = null;
         while(this.firstNode){
             if(!curr){
                 this.lastNode = this.firstNode;
             }
+            //console.log(curr)
             let nextNode=this.firstNode.next;
             this.firstNode.next =curr;
             curr =this.firstNode;
@@ -176,7 +179,7 @@ list.insertInLastOfList(25)
 
 
 list.prinList();
-
+console.log("===========")
 // list.deleteFromFront();
 // list.deleteFromLast();
 // list.deleteFromkthPosition(3);

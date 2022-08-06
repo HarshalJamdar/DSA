@@ -7,9 +7,6 @@ class ListNode{
 }
 
 
-
-
-
 var mergeTwoLists = function(list1, list2) {
 	// Create a temporary node whose next will point to the head of the resultant linked list
     const node = new ListNode();

@@ -12,7 +12,6 @@ function secLarge(arr){
     }
     return secMax
 }
-
 console.log(secLarge([5,8,6,0,4]))
 
 //========================================//

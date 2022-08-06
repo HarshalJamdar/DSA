@@ -17,5 +17,4 @@ function leastChar(str){
   }
   return [least_char,">>>",least]
 }
-
 console.log(leastChar("fdgfssgas"))
