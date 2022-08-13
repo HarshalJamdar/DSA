@@ -97,7 +97,7 @@ class LinkedList{
         if(k===1){
             this.deleteFromFront();
         }
-        while(curr && count !==k-1){
+        while(curr && count!==k-1){
             curr = curr.next;
             count++
         }
@@ -169,9 +169,9 @@ const list = new LinkedList();
 list.insertInFrontOfList(10);
 list.insertInFrontOfList(9);
 list.insertInFrontOfList(8);
-list.insertInLastOfList(15);
-list.insertInLastOfList(65);
-list.insertInLastOfList(25)
+// list.insertInLastOfList(15);
+// list.insertInLastOfList(65);
+// list.insertInLastOfList(25)
 //list.prinList();
 
 // console.log("===========")
@@ -192,7 +192,6 @@ list.prinList()
 
 //============================================================================//
 
-
 /**
  * what we have learned till now
  * insertionIn front
@@ -207,9 +206,9 @@ list.prinList()
  * insertion in between =O(n) //we need to traverse the list
  */
 /*delation T.C
- * Insertion in front=O(1)
- * insertion in last = O(1)
- * insertion in between =O(n) //we need to traverse the list */
+ * delation in front=O(1)
+ * delation in last = O(1)
+ * delation  in between =O(n) //we need to traverse the list */
 
 /*array insertion T.C
 last O(1)

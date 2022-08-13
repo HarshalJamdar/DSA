@@ -9,7 +9,6 @@
 // linked list based implementation
 
 class Node{
-
     constructor(data){
         this.data = data;
         this.next = null;
@@ -70,7 +69,7 @@ class Queue{
         return this.list.removeElement();
     }
 
-    get getSize(){
+    getSize(){
 
         return this.list.size;
     }
@@ -94,10 +93,10 @@ que.enQueue(50);
 
 
 // while(!que.isEmpty()){
-//     console.log( que.getSize," ====== ",que.deQueue());
+//     console.log( que.getSize()," ====== ",que.deQueue());
 // }
 
-// console.log(que.getSize)
+// console.log(que.getSize())
 
 // implement stack using queue;
 
@@ -164,6 +163,6 @@ while(!st.isEmpty()){
     console.log( st.getSize," ====== ",st.pop());
 }
 
-// console.log(st.getSize)
+ console.log(st.getSize)
 
 module.exports =  Queue;

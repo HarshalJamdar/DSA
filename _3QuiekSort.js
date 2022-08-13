@@ -1,13 +1,12 @@
 // recurison steps
 
 //  if we have a single element or no element in the array to be sorted return; (already sorted)
-// pick an element to serve as a pivot .( usually leftmost element as a pivot)
+// pick an element to serve as a pivot.( usually leftmost element as a pivot)
 //  split the array into two parts  -all  elements on left side of pivot have less value as comparte to pivot all  elements on right side of pivot have greater value as comparte to pivot 
 // recursively repeat the algorithm
 
 
 function getCurrectPositionOfPivot(arr,left,right){
-
     // taking right most element as a pivot;
     let pivot = arr[right];
 
@@ -45,15 +44,15 @@ function getCurrectPositionOfPivot(arr,left,right){
 
 }
 
-
+//[6,3,4,6,1,7,3,9,2,8]
 function getCurrectPositionOfPivot2(arr,low,high){
 
-    let left=low;
-    let right=high;
-    let pivot = arr[high];
+    let left=low; //0
+    let right=high; //9
+    let pivot = arr[high]; //arr[9]=8
 
     while(left<right){
-
+ 
         // this condition failed on 2 cases
         // 1=> left >=right
         // 2=> arr[left] > pivot (we need to send this right position)
@@ -97,16 +96,16 @@ const arr = [6,3,4,6,1,7,3,9,2,8];
 
 quickSort(arr,0,arr.length-1);
 
-// console.log(arr);
+console.log(arr);
 // for (let val of arr){
 //     console.log(val);
 // }
 
-let object={
-    'key1':'adhd',
-    'key2':'shdhd'
-}
+// let object={
+//     'key1':'adhd',
+//     'key2':'shdhd'
+// }
 
-for (let val of Object.entries(object)){
-    console.log(val);
-}
+// for (let val of Object.entries(object)){
+//     console.log(val);
+// }

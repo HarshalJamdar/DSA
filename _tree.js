@@ -1,7 +1,10 @@
 //  a tree is called binary tree if each node pointing to maximum (zero, one, or two children )
+// inorder   (Left -> root -> right) Traversal
+// preorder  ( root -> Left -> right) Traversal
+// postorder  (  Left -> right -> root) Traversal
+// level order
 
-
-const Queue = require("../stack/queue");
+const Queue = require("./_queue");
 
 class Node{
     constructor(data,left,right){
@@ -64,7 +67,7 @@ class BinaryTree{
             return;
         }
         this.inorderTraversal(root.left);
-        console.log(root.data, " -> ");
+        console.log(root.data, " => ");
         this.inorderTraversal(root.right);
 
     }
@@ -74,7 +77,7 @@ class BinaryTree{
         if(!root){
             return;
         }
-        console.log(root.data, " -> ");
+        console.log(root.data, " ==> ");
         this.preorderTraversal(root.left);
         this.preorderTraversal(root.right);
     }
@@ -86,7 +89,7 @@ class BinaryTree{
         }
         this.postorderTraversal(root.left);
         this.postorderTraversal(root.right);
-        console.log(root.data, " -> ");
+        console.log(root.data, " ===> ");
     }
 
     postorderSearchingTraversal(root,val){
@@ -138,18 +141,15 @@ binaryTree.insert(5);
 binaryTree.insert(6);
 binaryTree.insert(7);
 binaryTree.insert(8);
+binaryTree.insert(9);
 
-// console.log(binaryTree.root)
+//console.log(binaryTree.root)
 
-// binaryTree.inorderTraversal(binaryTree.root);
+binaryTree.inorderTraversal(binaryTree.root);
 
-// binaryTree.preorderTraversal(binaryTree.root);
+//binaryTree.preorderTraversal(binaryTree.root);
 
 // binaryTree.postorderSearchingTraversal(binaryTree.root,10,isFound);
 // console.log(isFound,">>>")
-binaryTree.totalLeafNode(binaryTree.root)
+binaryTree.totalLeafNode(binaryTree.root);
 console.log(binaryTree.heightOfTree(binaryTree.root),leafNodeCount)
-// inorder   (Left -> data -> right) Traversal
-// preorder  ( data -> Left -> right) Traversal
-// postorder  (  Left -> right -> data) Traversal
-// level order

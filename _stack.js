@@ -55,9 +55,9 @@
     // const LinkedList = require('../linked_list/list');
     
     class Node{
-        constructor(data){
+        constructor(data,next=null){
             this.data=data;
-            this
+            this.next = next;
         }
     }
     
@@ -85,8 +85,8 @@
             }
             let curr = this.head;
             this.head = this.head.next;
-            this.size--;
             curr.next = null;
+            this.size--;
             return curr.data;
         }
     
@@ -112,7 +112,7 @@
             return this.list.head;
         }
     
-        get getSize(){
+        getSize(){
             // return the size of the Stack;
             return this.list.size
         }
@@ -133,7 +133,7 @@
     // st.getTop();  // return the value of the top element of the stack
     
     while(!st.isEmpty()){
-        console.log( st.getSize," ====== ",st.pop());
+        console.log( st.getSize()," ====== ",st.pop());
     }
     
-    console.log(st.getSize)
+    console.log(st.getSize())
