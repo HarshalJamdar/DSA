@@ -16,10 +16,10 @@
 titleToNumber = function(columnTitle) {
     let res = 0
     for(let c of columnTitle){
-        console.log(res*26,">>",c.charCodeAt(0)- 65 + 1)
+        //console.log(res*26,">>",c.charCodeAt(0)- 65 + 1)
         res = res*26 + c.charCodeAt(0) - 65 + 1
     }
     return res
 };
 
-console.log(titleToNumber("AC"))
+console.log(titleToNumber("AA"))

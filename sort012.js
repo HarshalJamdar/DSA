@@ -1,6 +1,6 @@
 function sort012(arr){
     let n = arr.length
-    let left = 0,right = n - 1,i = 0;
+    let left = 0, right = n - 1, i = 0;
     
     while(i <= right) {       
         if(arr[i] == 2) {
@@ -10,7 +10,6 @@ function sort012(arr){
         else if(arr[i] == 0) {
              [arr[i],arr[left]]= [arr[left],arr[i]]
             left++;
-            i++;
         }
         else {
             i++;
@@ -18,4 +17,4 @@ function sort012(arr){
     }
     return arr
 }
-console.log(sort012([1,2,0,0,1]))
+console.log(sort012([1,2,0,0,1]));

@@ -10,5 +10,6 @@ function binarySearch(arr,target){ //array, targeted number
     return [-1,-1]
 }
 
-// console.log(binarySearch([2,3,4,5,5,6,7,9,10],9))
-console.log(binarySearch([2,3,4,5,5,6,7,9,10],8))
+console.log(binarySearch([2,3,4,5,5,6,7,9,10],9))
+console.log(binarySearch([2,3,4,5,5,6,7,9,10],8));
+

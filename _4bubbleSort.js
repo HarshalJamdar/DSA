@@ -11,7 +11,9 @@ function bubbleSort(arr){
         }
         if(swap===false) break;
     }
-    return arr
+    return arr;
 } 
 
-console.log(bubbleSort([8,4,9,3,7]))
+// console.log(bubbleSort([8,4,9,3,7]));
+
+

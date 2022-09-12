@@ -13,3 +13,5 @@ function selectionSort(arr){
 }
 
 console.log(selectionSort([8,4,9,3,7]))
+
+

@@ -6,4 +6,4 @@ function isPrime(num){
     }
     return true
 }
-console.log(isPrime(11))
+console.log(isPrime(2))

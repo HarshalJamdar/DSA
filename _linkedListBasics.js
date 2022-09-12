@@ -7,8 +7,8 @@ class Node{
 
 class LinkedList{
     constructor(){
-        this.firstNode=null;
-        this.lastNode=null;
+        this.firstNode = null;
+        this.lastNode = null;
     }
 
     insertInFrontOfList(data){
@@ -18,20 +18,22 @@ class LinkedList{
 
         //if list is empty
         if(!this.firstNode){
-            this.firstNode=node;
-            this.lastNode=node;
+            this.firstNode = node;
+            this.lastNode = node;
         }
         else{
             const temp = this.firstNode;
-            this.firstNode=node;
-            node.next=temp;
+            this.firstNode = node;
+            node.next = temp;
+            //node.next = this.firstNode;
+            //this.firstNode = node;
         }
     }
 
     insertInLastOfList(data){
         const node = new Node(data);
         if(!this.firstNode){
-            this.firstNode=node;
+            this.firstNode = node;
             this.lastNode = node;
         }else{
             this.lastNode.next = node;
@@ -92,7 +94,7 @@ class LinkedList{
     }
 
     deleteFromkthPosition(k){
-        let count=1;
+        let count = 1;
         let curr = this.firstNode;                                                                                                                                 
         if(k===1){
             this.deleteFromFront();
@@ -134,8 +136,8 @@ class LinkedList{
     loopStartNodeHashingTechnique(){
         let isLoopStarted = false;
         let set = new Set();
-        
         let curr = this.firstNode;
+        
         while(curr && !isLoopStarted){
             if(set.has(curr)){
                 isLoopStarted=true;
@@ -147,7 +149,7 @@ class LinkedList{
         if(isLoopStarted){
             return curr;
         }
-        return null;
+        return null; 
     }
 
     loopDeletionWithSlowPtr(){

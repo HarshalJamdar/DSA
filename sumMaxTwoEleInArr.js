@@ -3,7 +3,7 @@
 
 function sumMaxEleOfArr(arr){
     let max=-Infinity, secMax=-Infinity
-    let sum=0
+    let sum
     for(let i=0;i<arr.length;i++){
       if(arr[i]>max){
          secMax=max

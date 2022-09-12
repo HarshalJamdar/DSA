@@ -15,7 +15,7 @@ var isValid = function(str) {
         else return false;
     }       
  }
-    return stack.length===0?true:false
+    return stack.length === 0 ? true : false
 }
 console.log(isValid("(){}[]"))
 console.log(isValid("({{}})"))

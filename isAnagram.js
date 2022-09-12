@@ -20,13 +20,13 @@ function isAnagram(str1,str2){
   }
 
   let counter = {}
-  for(let letter of str1){ // mapping the letters
-    counter[letter] = (counter[letter] || 0) + 1; //first time letter will come,it will be undefined thats why taken it 0, and then adding 1(we cant add 1 to undefined) i.e. if already present add 1 or first time coming take 0 then add 1.
+  for(let i of str1){ // mapping 
+    counter[i] = (counter[i] || 0) + 1; //first time i will come,it will be undefined thats why taken it 0, and then adding 1(we cant add 1 to undefined) i.e. if already present add 1 or first time coming take 0 then add 1.
   }
   
-  for(let items of str2){
-    if(!counter[items]) return false //checking item in str2 is present in counter, if not return false.
-    counter[items] -= 1 //if present we are removing it from counter, i.e. if it is anagram counter will be empty then.
+  for(let j of str2){
+    if(!counter[j]) return false //checking item in str2 is present in counter, if not return false.
+    counter[j] -= 1 //if present we are removing it from counter, i.e. if it is anagram counter will be empty then.
   }
   return true
 }

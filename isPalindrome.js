@@ -27,7 +27,7 @@ function checkPalindrome2(str) {
     return true;
 }
 console.log(checkPalindrome2(101));
-console.log(checkPalindrome2("malayalam"))
+console.log(checkPalindrome2("malayalam"),">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 //=============================================//
 

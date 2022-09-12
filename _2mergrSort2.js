@@ -114,7 +114,7 @@ function merge(arr, l, m, r){
 // l is for left index and r is
 // right index of the sub-array
 // of arr to be sorted */
-function mergeSort(arr,l, r){
+function mergeSort(arr, l, r){
     if(l>=r){
         return;//returns recursively
     }
@@ -127,15 +127,6 @@ function mergeSort(arr,l, r){
 let arr=[8,5,2,9,5,4,7,2,1]
 mergeSort(arr,0,arr.length-1)
 console.log(arr)
-
-
-
-
-
-
-
-
-
 
 
 

@@ -26,37 +26,29 @@ class Node{
     }
 }
 
-
-
 class BST{
-
     constructor(){
         this.root = null;
     }
 
-
     insertRecursively(root,data){
-
         if(!root){
             const node = new Node(data);
             return node;
         }
-
         // incomming value is greater then current node;
         if(root.data<data){
             root.right= this.insertRecursively(root.right,data);
         }else{
-
             root.left= this.insertRecursively(root.left,data);
         }
-
         return root;
     }
+
 
     insert(data){
         this.root=this.insertRecursively(this.root,data);
     }
-
 
     // inorder traversal of a binary search tree gives sorted array
     inorder(root){
@@ -65,11 +57,9 @@ class BST{
             console.log(root.data);
             this.inorder(root.right);
         }
-
     }
 
     search(root,data){
-
         if(!root){
             // end of the tree return null 
             return null;
@@ -122,7 +112,6 @@ class BST{
     }
 
     delete(root,data){
-
         if(!root){
             return null;
         }
@@ -132,18 +121,13 @@ class BST{
          }else if(root.data<data){
             root.right= this.delete(root.right,data);
          }
-
          else{
-
             // we find the node we want to delete;
-
             // if leaf node
             if(root.left===null && root.right===null){
                 return null;
             }
-
             else if(root.left && root.right){
-
                 let maxNode = this.findMax(root.left);
                 root.data = maxNode.data;
                 root.left = this.delete(root.left,root.data);
@@ -159,10 +143,7 @@ class BST{
                 curr.left=null;
                 curr.right=null;
             }
-
-
          }
-
         //  return root of the subtree
          return root;
     }
@@ -170,7 +151,6 @@ class BST{
 
     //time complexity of this is O(n^2)
     isBst(root){
-        
         if(!root){
             return true;
         }
@@ -181,12 +161,10 @@ class BST{
         if(root.right !=null && this.findMinInTree(root.right)<root.data){
             return false;
         }
-
         return this.isBst(root.left) && this.isBst(root.right);
     }
 
     isBSTOptimal(root,minVal,maxVal){
-
         if(!root){
             return true;
         }
@@ -197,9 +175,7 @@ class BST{
         if(root.data>maxVal){
             return false;
         }
-
         return this.isBSTOptimal(root.left,minVal,root.data) && this.isBSTOptimal(root.right,root.data,maxVal);
-
     }
 }
 
@@ -210,7 +186,6 @@ const arr =  '6 4 10 3 1 5 7 12 9 8'.split(' ').map(val=>+val);
 console.log(arr);
 for( let val of arr)
     bst.insert(val);
-
 
     bst.root.left.left.data= 50;
     // bst.inorder(bst.root);
