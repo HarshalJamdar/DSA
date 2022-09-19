@@ -6,7 +6,7 @@ function isSubSequent(a1, a2){
         return j === a2.length;
     }
 
-
 let a1 = [1,2,3,4]
 let a2 = [1,3]
-console.log(isSubSequent(a1,a2))
+
+console.log(isSubSequent(a1,a2));

@@ -1,8 +1,8 @@
 //Find pairs which are divisible and return count of such pairs.
 
 function countPair(arr){
-    let count=0,i=0,j=1
-    while(i!=arr.length){
+    let count=0,i=0,j=i+1;
+    while(i<arr.length){
         if(arr[i]%arr[j]===0 || arr[j]%arr[i]===0) count++;
         j++;
         if(j>=arr.length){

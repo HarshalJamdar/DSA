@@ -109,7 +109,6 @@ class StackUsingQueue{
     }
 
     push(data){
-
         if(this.q1.isEmpty()){
             this.q2.enQueue(data);
         }else{
@@ -133,11 +132,9 @@ class StackUsingQueue{
             return this.q1.deQueue()
 
         }
-
     }
 
     isEmpty(){
-
         return this.size ===0;
     }
 

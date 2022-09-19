@@ -1,11 +1,11 @@
 
 
 function animalCount(animals){
-    let Freq={}
+    let Freq={};
     for(let i of animals){
-        Freq[i]=(Freq[i] || 0) + 1
+        Freq[i]=(Freq[i] || 0) + 1;
     }
-    return Freq
+    return Freq;
 }
 
 console.log(animalCount( ["cat","dog","goat","lion","cat"] ))

@@ -58,7 +58,7 @@ class LinkedList{
             curr=curr.next;
             count++
         }
-        //console.log(curr);
+        
         if(!curr && count !==k){
             console.log("invalid position");
             throw Error("Invalid position")
@@ -79,7 +79,7 @@ class LinkedList{
         this.firstNode = this.firstNode.next;
         temp.next = null
         if(!this.firstNode){
-            this.lastNode=null;
+            this.lastNode = null;
         }
     }
 
@@ -185,7 +185,7 @@ console.log("===========")
 // list.deleteFromFront();
 // list.deleteFromLast();
 // list.deleteFromkthPosition(3);
- list.reverseList()
+list.reverseList()
 list.prinList()
 
 // list.lastNode.next =list.firstNode.next.next.next;
