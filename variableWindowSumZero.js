@@ -16,7 +16,7 @@ function isSumZero(arr){
     return "no"
   }
 
-function isSumZero(arr){
+function isSumZero2(arr){
     let sum = 0;
     let sumSet = new Set();
     sumSet.add(0);
@@ -32,7 +32,7 @@ function isSumZero(arr){
   console.log(isSumZero([2, 3, 4, -4, -3, 7, 8, 9]))
   console.log(isSumZero([1, 2, 3, 5, 6, 7]))
   
-  //here TC is O(n^2), we can optimize it to O(n).
+  //here TC is O(n^2), we can optimize it to O(n) like in isSumZero2.
   //[2, 3, 4, -4, -3, 7, 8, 9] ------> 2 5 9 5 2 9 17 26, check addition at each index if addition is repeating it means there sum is comming zero.
   //we can map it or use set for this 2 5 9 5 2 9 17 26, if repeating nums then yes or no.
   
