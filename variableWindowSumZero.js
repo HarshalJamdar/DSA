@@ -15,6 +15,19 @@ function isSumZero(arr){
     }
     return "no"
   }
+
+function isSumZero(arr){
+    let sum = 0;
+    let sumSet = new Set();
+    sumSet.add(0);
+    for(let i=0; i<arr.length; i++){
+        sum+= arr[i];
+        if(sumSet.has(sum)) return 'yes';
+        sumSet.add(sum);
+    }
+
+    return 'no';
+}
   
   console.log(isSumZero([2, 3, 4, -4, -3, 7, 8, 9]))
   console.log(isSumZero([1, 2, 3, 5, 6, 7]))
